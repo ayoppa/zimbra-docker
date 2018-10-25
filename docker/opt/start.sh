@@ -134,8 +134,8 @@ echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra-zcs-8.8.9.tar.gz -C /opt/zimbra-install/
 
 echo "Installing Zimbra Collaboration just the Software"
-##cd /opt/zimbra-install/zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
-cd /opt/zimbra-install/zcs-* && ./install.sh -s
+cd /opt/zimbra-install/zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
+##cd /opt/zimbra-install/zcs-* && ./install.sh -s
 
 echo "Installing Zimbra Collaboration injecting the configuration"
 /opt/zimbra/libexec/zmsetup.pl -c /opt/zimbra-install/installZimbraScript
