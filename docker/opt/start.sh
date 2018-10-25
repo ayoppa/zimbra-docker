@@ -127,11 +127,11 @@ zimbra_server_hostname="$HOSTNAME.$DOMAIN"
 INSTALL_PACKAGES="zimbra-core zimbra-ldap zimbra-logger zimbra-mta zimbra-snmp zimbra-store zimbra-apache zimbra-spell zimbra-memcached zimbra-proxy"
 EOF
 ##Install the Zimbra Collaboration ##
-echo "Downloading Zimbra Collaboration 8.8.9"
-wget -O /opt/zimbra-install/zimbra-zcs-8.8.9.tar.gz https://files.zimbra.com/downloads/8.8.9_GA/zcs-8.8.9_GA_3019.UBUNTU16_64.20180809160254.tgz
+echo "Downloading Zimbra Collaboration 8.8.10"
+wget -O /opt/zimbra-install/zimbra-zcs-8.8.10.tar.gz https://files.zimbra.com/downloads/8.8.10_GA/zcs-8.8.10_GA_3039.UBUNTU16_64.20180928094617.tgz
 
 echo "Extracting files from the archive"
-tar xzvf /opt/zimbra-install/zimbra-zcs-8.8.9.tar.gz -C /opt/zimbra-install/
+tar xzvf /opt/zimbra-install/zimbra-zcs-8.8.10.tar.gz -C /opt/zimbra-install/
 
 echo "Installing Zimbra Collaboration just the Software"
 cd /opt/zimbra-install/zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
