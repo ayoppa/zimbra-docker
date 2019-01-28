@@ -134,6 +134,9 @@ wget -O /opt/zimbra-install/zimbra-zcs-8.8.10.tar.gz https://files.zimbra.com/do
 echo "Extracting files from the archive"
 tar xzvf /opt/zimbra-install/zimbra-zcs-8.8.10.tar.gz -C /opt/zimbra-install/
 
+## updating apt
+apt-get update
+
 echo "Installing Zimbra Collaboration just the Software"
 cd /opt/zimbra-install/zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
 ##cd /opt/zimbra-install/zcs-* && ./install.sh -s
